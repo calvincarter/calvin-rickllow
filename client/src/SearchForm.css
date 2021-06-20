@@ -1,0 +1,28 @@
+.input-container {
+  position: relative;
+}
+
+.SearchForm-btn {
+  position: absolute;
+  top: 20%;
+  right: 1%;
+  transform: translate(-20%, -1%);
+  background-color: #fff;
+  border: none;
+}
+
+@media only screen and (min-width: 512px) {
+  .SearchForm-btn {
+    top: 26%;
+    right: 1%;
+    transform: translate(-26%, -1%);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .SearchForm-btn {
+    top: 35%;
+    right: 1%;
+    transform: translate(-35%, -1%);
+  }
+}

@@ -1,0 +1,26 @@
+.input-container {
+  position: relative;
+}
+
+.ReviewForm-btn {
+  position: absolute;
+  top: 1%;
+  right: 0;
+  transform: translateY(-1%);
+}
+
+@media only screen and (min-width: 512px) {
+  .ReviewForm-btn {
+    top: 1%;
+    right: 0;
+    transform: translateY(-1%);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .ReviewForm-btn {
+    top: 1%;
+    right: 0;
+    transform: translateY(-1%);
+  }
+}

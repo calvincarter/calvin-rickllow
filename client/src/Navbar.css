@@ -1,0 +1,17 @@
+.nav-item {
+  margin-right: 20px;
+}
+
+.Navbar-link {
+  color: white;
+  text-decoration: none;
+}
+
+.Navbar-link:hover {
+  color: rgb(0, 255, 0);
+}
+
+.Navbar-logo {
+  width: 200px;
+  height: 70px;
+}

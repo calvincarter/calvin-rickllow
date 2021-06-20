@@ -1,0 +1,18 @@
+.ViewLocationForm {
+  width: 75%;
+}
+
+.ViewLocationForm input {
+  background-color: rgb(223, 223, 223);
+}
+
+.ViewLocationForm button {
+  width: 100%;
+}
+
+.ViewLocationForm-submitted-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
