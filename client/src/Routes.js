@@ -19,7 +19,7 @@ const Routes = () => {
       <Route exact path="/listings/categories/dimensions">
         <Dimensions />
       </Route>
-      <Route exact path="/listings/categories/:category">
+      <Route exact path={["/listings", "/listings/categories/:category"]}>
         <Listings />
       </Route>
       <Route><FourOFourPage /></Route>

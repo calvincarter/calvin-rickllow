@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-app.use('/locations', locationsRoutes);
+app.use('/api/locations', locationsRoutes);
 
 /** Handle 404 errors -- this matches everything */
 app.use(function (req, res, next) {
