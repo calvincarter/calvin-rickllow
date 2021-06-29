@@ -2,8 +2,6 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 
-const { NotFoundError } = require('./expressErrors');
-
 const locationsRoutes = require('./routes/locations');
 
 // CORS allows our backend to communicate with our frontend and vice versa.  Otherwise, we'll get an error in the browser every
@@ -18,9 +16,9 @@ if (process.env.NODE_ENV === "production") {
 
 app.use('/api/locations', locationsRoutes);
 
-/** Handle 404 errors -- this matches everything */
-app.use(function (req, res, next) {
-  return next(new NotFoundError());
+// If no API routes are hit, send the React app
+router.use(function(req, res) {
+  res.sendFile(path.join(__dirname, "client/build/index.html"));
 });
 
 /** Generic error handler; anything unhandled goes here. */
