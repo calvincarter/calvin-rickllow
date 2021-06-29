@@ -22,12 +22,6 @@ const Routes = () => {
       <Route exact path="/listings/categories/:category">
         <Listings />
       </Route>
-      <Route exact path="/listings/:name">
-        <Listing />
-      </Route>
-      <Route exact path="/listings">
-        <Listings />
-      </Route>
       <Route><FourOFourPage /></Route>
     </Switch>
   );
